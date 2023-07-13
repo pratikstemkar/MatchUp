@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Navlink from "./Navlink";
 
 const Navbar = () => {
 	return (
@@ -14,19 +15,22 @@ const Navbar = () => {
 						<div className="flex w-full justify-center md:justify-normal md:flex-row-reverse">
 							<ul className="inline-flex space-x-4">
 								<li className="hover:underline">
-									<Link to="/">Live Scores</Link>
+									<Navlink params={{ link: "Score" }} />
 								</li>
 								<li className="hover:underline">
-									<Link to="/">Schedule</Link>
+									<Navlink params={{ link: "Schedule" }} />
 								</li>
 								<li className="hover:underline">
-									<Link to="/">Teams</Link>
+									<Navlink params={{ link: "Teams" }} />
 								</li>
 								<li className="hover:underline">
-									<Link to="/">Stats</Link>
+									<Navlink params={{ link: "Stats" }} />
 								</li>
 								<li className="hover:underline">
-									<Link to="/">Rankings</Link>
+									<Navlink params={{ link: "Rankings" }} />
+								</li>
+								<li className="hover:underline">
+									<Navlink params={{ link: "Admin" }} />
 								</li>
 							</ul>
 						</div>

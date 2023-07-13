@@ -1,5 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { slideLeft, slideRight } from "../../lib/utils";
+import { Link } from "react-router-dom";
 
 const MatchCard = () => {
 	return (
@@ -15,7 +16,7 @@ const MatchCard = () => {
 					/>
 					<div className="border p-2 flex-shrink-0 w-[250px] rounded-md ml-2 inline-block">
 						<div className="text-sm text-slate-500">
-							3rd ODI • Ind v Aus World Cup
+							<Link to="/match/23fx">3rd ODI • Ind v Aus World Cup</Link>
 						</div>
 						<div className="">
 							<div>IND: 456/4</div>

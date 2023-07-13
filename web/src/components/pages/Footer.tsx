@@ -7,14 +7,22 @@ const Footer = () => {
 				<div className="font-mono text-sm m-auto">
 					<span>
 						Developed by{" "}
-						<Link to="https://pratikstemkar.in" className="underline">
+						<Link
+							to="https://pratikstemkar.in"
+							className="underline"
+							target="_blank"
+						>
 							Pratik Temkar
 						</Link>
 					</span>
 					{" • "}
 					<span>
 						Code available on{" "}
-						<Link to="https://github.com/matchup-web" className="underline">
+						<Link
+							to="https://github.com/matchup-web"
+							className="underline"
+							target="_blank"
+						>
 							GitHub
 						</Link>
 					</span>

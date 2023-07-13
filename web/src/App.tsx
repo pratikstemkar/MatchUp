@@ -1,7 +1,6 @@
 import Navbar from "./components/pages/Navbar";
-import MatchCard from "./components/pages/MatchCard";
-import Content from "./components/pages/Content";
 import Footer from "./components/pages/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
 	return (
@@ -10,8 +9,7 @@ function App() {
 				<div>
 					<Navbar />
 					<main className="max-w-5xl m-auto bg-white">
-						<MatchCard />
-						<Content />
+						<Outlet />
 					</main>
 				</div>
 				<Footer />
